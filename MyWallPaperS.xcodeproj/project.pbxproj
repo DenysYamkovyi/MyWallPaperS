@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0167BE01D0C773E007DC9A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0167BDF1D0C773E007DC9A4 /* main.m */; };
+		D0167BE31D0C773F007DC9A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0167BE21D0C773F007DC9A4 /* AppDelegate.m */; };
+		D0167BE61D0C773F007DC9A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0167BE51D0C773F007DC9A4 /* ViewController.m */; };
+		D0167BE91D0C773F007DC9A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0167BE71D0C773F007DC9A4 /* Main.storyboard */; };
+		D0167BEC1D0C7740007DC9A4 /* MyWallPaperS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0167BEA1D0C773F007DC9A4 /* MyWallPaperS.xcdatamodeld */; };
+		D0167BEE1D0C7740007DC9A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0167BED1D0C7740007DC9A4 /* Assets.xcassets */; };
+		D0167BF11D0C7740007DC9A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0167BEF1D0C7740007DC9A4 /* LaunchScreen.storyboard */; };
+		D0187ACB1D3D23420012ECCF /* UIImage+LoadJPG.m in Sources */ = {isa = PBXBuildFile; fileRef = D0187AC91D3D23420012ECCF /* UIImage+LoadJPG.m */; };
+		D0187ACE1D3D262F0012ECCF /* WallpaperCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0187ACD1D3D262F0012ECCF /* WallpaperCollectionViewController.m */; };
+		D0187AD91D3D3A360012ECCF /* 1-Small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AD41D3D3A360012ECCF /* 1-Small.jpg */; };
+		D0187ADA1D3D3A360012ECCF /* 2-Small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AD51D3D3A360012ECCF /* 2-Small.jpg */; };
+		D0187ADB1D3D3A360012ECCF /* 3-Small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AD61D3D3A360012ECCF /* 3-Small.jpg */; };
+		D0187ADC1D3D3A360012ECCF /* 4-Small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AD71D3D3A360012ECCF /* 4-Small.jpg */; };
+		D0187ADD1D3D3A360012ECCF /* 5-Small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AD81D3D3A360012ECCF /* 5-Small.jpg */; };
+		D0187AE31D3D3ADA0012ECCF /* 1-Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187ADE1D3D3ADA0012ECCF /* 1-Large.jpg */; };
+		D0187AE41D3D3ADA0012ECCF /* 2-Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187ADF1D3D3ADA0012ECCF /* 2-Large.jpg */; };
+		D0187AE51D3D3ADA0012ECCF /* 3-Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AE01D3D3ADA0012ECCF /* 3-Large.jpg */; };
+		D0187AE61D3D3ADA0012ECCF /* 4-Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AE11D3D3ADA0012ECCF /* 4-Large.jpg */; };
+		D0187AE71D3D3ADA0012ECCF /* 5-Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AE21D3D3ADA0012ECCF /* 5-Large.jpg */; };
+		D0187AED1D3D3B670012ECCF /* 6-Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AE81D3D3B670012ECCF /* 6-Large.jpg */; };
+		D0187AEE1D3D3B670012ECCF /* 7-Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AE91D3D3B670012ECCF /* 7-Large.jpg */; };
+		D0187AEF1D3D3B670012ECCF /* 8-Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AEA1D3D3B670012ECCF /* 8-Large.jpg */; };
+		D0187AF01D3D3B670012ECCF /* 9-Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AEB1D3D3B670012ECCF /* 9-Large.jpg */; };
+		D0187AF11D3D3B670012ECCF /* 10-Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AEC1D3D3B670012ECCF /* 10-Large.jpg */; };
+		D0187AF71D3D3BBD0012ECCF /* 6-Small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AF21D3D3BBD0012ECCF /* 6-Small.jpg */; };
+		D0187AF81D3D3BBD0012ECCF /* 7-Small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AF31D3D3BBD0012ECCF /* 7-Small.jpg */; };
+		D0187AF91D3D3BBD0012ECCF /* 8-Small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AF41D3D3BBD0012ECCF /* 8-Small.jpg */; };
+		D0187AFA1D3D3BBD0012ECCF /* 9-Small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AF51D3D3BBD0012ECCF /* 9-Small.jpg */; };
+		D0187AFB1D3D3BBD0012ECCF /* 10-Small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0187AF61D3D3BBD0012ECCF /* 10-Small.jpg */; };
+		D0187AFF1D3E66920012ECCF /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = D0187AFC1D3E66920012ECCF /* close.png */; };
+		D0187B001D3E66920012ECCF /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = D0187AFD1D3E66920012ECCF /* info.png */; };
+		D0187B011D3E66920012ECCF /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = D0187AFE1D3E66920012ECCF /* share.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0167BDB1D0C773D007DC9A4 /* MyWallPaperS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWallPaperS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0167BDF1D0C773E007DC9A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0167BE11D0C773E007DC9A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0167BE21D0C773F007DC9A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0167BE41D0C773F007DC9A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D0167BE51D0C773F007DC9A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0167BE81D0C773F007DC9A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0167BEB1D0C773F007DC9A4 /* MyWallPaperS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyWallPaperS.xcdatamodel; sourceTree = "<group>"; };
+		D0167BED1D0C7740007DC9A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0167BF01D0C7740007DC9A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0167BF21D0C7741007DC9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0187AC91D3D23420012ECCF /* UIImage+LoadJPG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LoadJPG.m"; sourceTree = "<group>"; };
+		D0187ACA1D3D23420012ECCF /* UIImage+LoadJPG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LoadJPG.h"; sourceTree = "<group>"; };
+		D0187ACC1D3D262F0012ECCF /* WallpaperCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WallpaperCollectionViewController.h; path = ../WallpaperCollectionViewController.h; sourceTree = "<group>"; };
+		D0187ACD1D3D262F0012ECCF /* WallpaperCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WallpaperCollectionViewController.m; path = ../WallpaperCollectionViewController.m; sourceTree = "<group>"; };
+		D0187AD41D3D3A360012ECCF /* 1-Small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1-Small.jpg"; sourceTree = "<group>"; };
+		D0187AD51D3D3A360012ECCF /* 2-Small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2-Small.jpg"; sourceTree = "<group>"; };
+		D0187AD61D3D3A360012ECCF /* 3-Small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3-Small.jpg"; sourceTree = "<group>"; };
+		D0187AD71D3D3A360012ECCF /* 4-Small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "4-Small.jpg"; sourceTree = "<group>"; };
+		D0187AD81D3D3A360012ECCF /* 5-Small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5-Small.jpg"; sourceTree = "<group>"; };
+		D0187ADE1D3D3ADA0012ECCF /* 1-Large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1-Large.jpg"; sourceTree = "<group>"; };
+		D0187ADF1D3D3ADA0012ECCF /* 2-Large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2-Large.jpg"; sourceTree = "<group>"; };
+		D0187AE01D3D3ADA0012ECCF /* 3-Large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3-Large.jpg"; sourceTree = "<group>"; };
+		D0187AE11D3D3ADA0012ECCF /* 4-Large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "4-Large.jpg"; sourceTree = "<group>"; };
+		D0187AE21D3D3ADA0012ECCF /* 5-Large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5-Large.jpg"; sourceTree = "<group>"; };
+		D0187AE81D3D3B670012ECCF /* 6-Large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6-Large.jpg"; sourceTree = "<group>"; };
+		D0187AE91D3D3B670012ECCF /* 7-Large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7-Large.jpg"; sourceTree = "<group>"; };
+		D0187AEA1D3D3B670012ECCF /* 8-Large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "8-Large.jpg"; sourceTree = "<group>"; };
+		D0187AEB1D3D3B670012ECCF /* 9-Large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "9-Large.jpg"; sourceTree = "<group>"; };
+		D0187AEC1D3D3B670012ECCF /* 10-Large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "10-Large.jpg"; sourceTree = "<group>"; };
+		D0187AF21D3D3BBD0012ECCF /* 6-Small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6-Small.jpg"; sourceTree = "<group>"; };
+		D0187AF31D3D3BBD0012ECCF /* 7-Small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7-Small.jpg"; sourceTree = "<group>"; };
+		D0187AF41D3D3BBD0012ECCF /* 8-Small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "8-Small.jpg"; sourceTree = "<group>"; };
+		D0187AF51D3D3BBD0012ECCF /* 9-Small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "9-Small.jpg"; sourceTree = "<group>"; };
+		D0187AF61D3D3BBD0012ECCF /* 10-Small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "10-Small.jpg"; sourceTree = "<group>"; };
+		D0187AFC1D3E66920012ECCF /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		D0187AFD1D3E66920012ECCF /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		D0187AFE1D3E66920012ECCF /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0167BD81D0C773C007DC9A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0167BD21D0C7739007DC9A4 = {
+			isa = PBXGroup;
+			children = (
+				D0167BDD1D0C773E007DC9A4 /* MyWallPaperS */,
+				D0167BDC1D0C773D007DC9A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0167BDC1D0C773D007DC9A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0167BDB1D0C773D007DC9A4 /* MyWallPaperS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0167BDD1D0C773E007DC9A4 /* MyWallPaperS */ = {
+			isa = PBXGroup;
+			children = (
+				D0187AD11D3D39D50012ECCF /* Images */,
+				D0187AD01D3D26890012ECCF /* ViewControllers */,
+				D0187ACF1D3D26520012ECCF /* Utils */,
+				D0167BE11D0C773E007DC9A4 /* AppDelegate.h */,
+				D0167BE21D0C773F007DC9A4 /* AppDelegate.m */,
+				D0167BE71D0C773F007DC9A4 /* Main.storyboard */,
+				D0167BED1D0C7740007DC9A4 /* Assets.xcassets */,
+				D0167BEF1D0C7740007DC9A4 /* LaunchScreen.storyboard */,
+				D0167BF21D0C7741007DC9A4 /* Info.plist */,
+				D0167BEA1D0C773F007DC9A4 /* MyWallPaperS.xcdatamodeld */,
+				D0167BDE1D0C773E007DC9A4 /* Supporting Files */,
+			);
+			path = MyWallPaperS;
+			sourceTree = "<group>";
+		};
+		D0167BDE1D0C773E007DC9A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0167BDF1D0C773E007DC9A4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0187ACF1D3D26520012ECCF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D0187ACA1D3D23420012ECCF /* UIImage+LoadJPG.h */,
+				D0187AC91D3D23420012ECCF /* UIImage+LoadJPG.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		D0187AD01D3D26890012ECCF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0167BE41D0C773F007DC9A4 /* ViewController.h */,
+				D0167BE51D0C773F007DC9A4 /* ViewController.m */,
+				D0187ACC1D3D262F0012ECCF /* WallpaperCollectionViewController.h */,
+				D0187ACD1D3D262F0012ECCF /* WallpaperCollectionViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D0187AD11D3D39D50012ECCF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D0187B021D3E669A0012ECCF /* TabBarItemImages */,
+				D0187AD31D3D39FE0012ECCF /* Large */,
+				D0187AD21D3D39F50012ECCF /* Small */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D0187AD21D3D39F50012ECCF /* Small */ = {
+			isa = PBXGroup;
+			children = (
+				D0187AD41D3D3A360012ECCF /* 1-Small.jpg */,
+				D0187AD51D3D3A360012ECCF /* 2-Small.jpg */,
+				D0187AD61D3D3A360012ECCF /* 3-Small.jpg */,
+				D0187AD71D3D3A360012ECCF /* 4-Small.jpg */,
+				D0187AD81D3D3A360012ECCF /* 5-Small.jpg */,
+				D0187AF21D3D3BBD0012ECCF /* 6-Small.jpg */,
+				D0187AF31D3D3BBD0012ECCF /* 7-Small.jpg */,
+				D0187AF41D3D3BBD0012ECCF /* 8-Small.jpg */,
+				D0187AF51D3D3BBD0012ECCF /* 9-Small.jpg */,
+				D0187AF61D3D3BBD0012ECCF /* 10-Small.jpg */,
+			);
+			name = Small;
+			sourceTree = "<group>";
+		};
+		D0187AD31D3D39FE0012ECCF /* Large */ = {
+			isa = PBXGroup;
+			children = (
+				D0187ADE1D3D3ADA0012ECCF /* 1-Large.jpg */,
+				D0187ADF1D3D3ADA0012ECCF /* 2-Large.jpg */,
+				D0187AE01D3D3ADA0012ECCF /* 3-Large.jpg */,
+				D0187AE11D3D3ADA0012ECCF /* 4-Large.jpg */,
+				D0187AE21D3D3ADA0012ECCF /* 5-Large.jpg */,
+				D0187AE81D3D3B670012ECCF /* 6-Large.jpg */,
+				D0187AE91D3D3B670012ECCF /* 7-Large.jpg */,
+				D0187AEA1D3D3B670012ECCF /* 8-Large.jpg */,
+				D0187AEB1D3D3B670012ECCF /* 9-Large.jpg */,
+				D0187AEC1D3D3B670012ECCF /* 10-Large.jpg */,
+			);
+			name = Large;
+			sourceTree = "<group>";
+		};
+		D0187B021D3E669A0012ECCF /* TabBarItemImages */ = {
+			isa = PBXGroup;
+			children = (
+				D0187AFC1D3E66920012ECCF /* close.png */,
+				D0187AFD1D3E66920012ECCF /* info.png */,
+				D0187AFE1D3E66920012ECCF /* share.png */,
+			);
+			name = TabBarItemImages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0167BDA1D0C773C007DC9A4 /* MyWallPaperS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0167BF51D0C7741007DC9A4 /* Build configuration list for PBXNativeTarget "MyWallPaperS" */;
+			buildPhases = (
+				D0167BD71D0C773C007DC9A4 /* Sources */,
+				D0167BD81D0C773C007DC9A4 /* Frameworks */,
+				D0167BD91D0C773C007DC9A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWallPaperS;
+			productName = MyWallPaperS;
+			productReference = D0167BDB1D0C773D007DC9A4 /* MyWallPaperS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0167BD31D0C773A007DC9A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "CompanyYamkovyiBrother's";
+				TargetAttributes = {
+					D0167BDA1D0C773C007DC9A4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2DA83SZBD3;
+					};
+				};
+			};
+			buildConfigurationList = D0167BD61D0C773B007DC9A4 /* Build configuration list for PBXProject "MyWallPaperS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0167BD21D0C7739007DC9A4;
+			productRefGroup = D0167BDC1D0C773D007DC9A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0167BDA1D0C773C007DC9A4 /* MyWallPaperS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0167BD91D0C773C007DC9A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0167BF11D0C7740007DC9A4 /* LaunchScreen.storyboard in Resources */,
+				D0187AE51D3D3ADA0012ECCF /* 3-Large.jpg in Resources */,
+				D0187ADB1D3D3A360012ECCF /* 3-Small.jpg in Resources */,
+				D0167BEE1D0C7740007DC9A4 /* Assets.xcassets in Resources */,
+				D0187AE31D3D3ADA0012ECCF /* 1-Large.jpg in Resources */,
+				D0187AE41D3D3ADA0012ECCF /* 2-Large.jpg in Resources */,
+				D0187AE61D3D3ADA0012ECCF /* 4-Large.jpg in Resources */,
+				D0187AEF1D3D3B670012ECCF /* 8-Large.jpg in Resources */,
+				D0187AED1D3D3B670012ECCF /* 6-Large.jpg in Resources */,
+				D0187AFF1D3E66920012ECCF /* close.png in Resources */,
+				D0187ADD1D3D3A360012ECCF /* 5-Small.jpg in Resources */,
+				D0187AF81D3D3BBD0012ECCF /* 7-Small.jpg in Resources */,
+				D0187B011D3E66920012ECCF /* share.png in Resources */,
+				D0187AFB1D3D3BBD0012ECCF /* 10-Small.jpg in Resources */,
+				D0187AF71D3D3BBD0012ECCF /* 6-Small.jpg in Resources */,
+				D0187AFA1D3D3BBD0012ECCF /* 9-Small.jpg in Resources */,
+				D0167BE91D0C773F007DC9A4 /* Main.storyboard in Resources */,
+				D0187AF91D3D3BBD0012ECCF /* 8-Small.jpg in Resources */,
+				D0187AEE1D3D3B670012ECCF /* 7-Large.jpg in Resources */,
+				D0187AD91D3D3A360012ECCF /* 1-Small.jpg in Resources */,
+				D0187AF11D3D3B670012ECCF /* 10-Large.jpg in Resources */,
+				D0187ADC1D3D3A360012ECCF /* 4-Small.jpg in Resources */,
+				D0187ADA1D3D3A360012ECCF /* 2-Small.jpg in Resources */,
+				D0187B001D3E66920012ECCF /* info.png in Resources */,
+				D0187AE71D3D3ADA0012ECCF /* 5-Large.jpg in Resources */,
+				D0187AF01D3D3B670012ECCF /* 9-Large.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0167BD71D0C773C007DC9A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0167BE61D0C773F007DC9A4 /* ViewController.m in Sources */,
+				D0187ACE1D3D262F0012ECCF /* WallpaperCollectionViewController.m in Sources */,
+				D0167BE31D0C773F007DC9A4 /* AppDelegate.m in Sources */,
+				D0167BEC1D0C7740007DC9A4 /* MyWallPaperS.xcdatamodeld in Sources */,
+				D0187ACB1D3D23420012ECCF /* UIImage+LoadJPG.m in Sources */,
+				D0167BE01D0C773E007DC9A4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0167BE71D0C773F007DC9A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0167BE81D0C773F007DC9A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0167BEF1D0C7740007DC9A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0167BF01D0C7740007DC9A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0167BF31D0C7741007DC9A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0167BF41D0C7741007DC9A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0167BF61D0C7741007DC9A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyWallPaperS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CYB.MyWallPaperS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0167BF71D0C7741007DC9A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyWallPaperS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CYB.MyWallPaperS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0167BD61D0C773B007DC9A4 /* Build configuration list for PBXProject "MyWallPaperS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0167BF31D0C7741007DC9A4 /* Debug */,
+				D0167BF41D0C7741007DC9A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0167BF51D0C7741007DC9A4 /* Build configuration list for PBXNativeTarget "MyWallPaperS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0167BF61D0C7741007DC9A4 /* Debug */,
+				D0167BF71D0C7741007DC9A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D0167BEA1D0C773F007DC9A4 /* MyWallPaperS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D0167BEB1D0C773F007DC9A4 /* MyWallPaperS.xcdatamodel */,
+			);
+			currentVersion = D0167BEB1D0C773F007DC9A4 /* MyWallPaperS.xcdatamodel */;
+			path = MyWallPaperS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D0167BD31D0C773A007DC9A4 /* Project object */;
+}

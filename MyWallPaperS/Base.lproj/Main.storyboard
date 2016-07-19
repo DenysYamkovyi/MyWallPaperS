@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AnM-do-E64">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oaB-F6-r7X">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="nOE-Zj-Ji2">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="anY-kz-ewk">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="KGh-JU-LJH"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5x2-dF-W8d"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oaB-F6-r7X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="USn-cP-n8X"/>
+                            <constraint firstAttribute="trailing" secondItem="oaB-F6-r7X" secondAttribute="trailing" id="evF-xI-olx"/>
+                            <constraint firstItem="oaB-F6-r7X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kkR-F2-hb5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oaB-F6-r7X" secondAttribute="bottom" id="l4U-X9-4HC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xyS-b9-dhf"/>
+                    <connections>
+                        <outlet property="collectionView" destination="oaB-F6-r7X" id="ddw-Ka-0RJ"/>
+                        <segue destination="eVa-rM-mx3" kind="show" identifier="segueIdentifier" id="J6c-Ia-YEn"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="82" y="-1954"/>
+        </scene>
+        <!--Wallpaper Collection View Controller-->
+        <scene sceneID="4h5-zz-LQp">
+            <objects>
+                <viewController id="eVa-rM-mx3" customClass="WallpaperCollectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vm5-jp-qxh"/>
+                        <viewControllerLayoutGuide type="bottom" id="DgD-Ih-BCU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a6G-KP-hqt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qmX-7R-qTi">
+                                <rect key="frame" x="0.0" y="70" width="600" height="486"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="KDG-rL-wqm">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MA3-V9-FrC">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="eVa-rM-mx3" id="u3N-4H-bza"/>
+                                    <outlet property="delegate" destination="eVa-rM-mx3" id="5mF-bF-a5t"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qmX-7R-qTi" secondAttribute="trailing" id="5oi-bB-sYi"/>
+                            <constraint firstItem="DgD-Ih-BCU" firstAttribute="top" secondItem="qmX-7R-qTi" secondAttribute="bottom" id="CdB-rA-au3"/>
+                            <constraint firstItem="qmX-7R-qTi" firstAttribute="leading" secondItem="a6G-KP-hqt" secondAttribute="leading" id="QMz-fC-UXL"/>
+                            <constraint firstItem="qmX-7R-qTi" firstAttribute="top" secondItem="vm5-jp-qxh" secondAttribute="bottom" constant="50" id="e7r-4F-XAO"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem image="share.png" id="UBo-7Q-heA">
+                            <connections>
+                                <action selector="onShareAction:" destination="eVa-rM-mx3" id="Mk0-80-hVH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="I25-Ar-fP5"/>
+                        <barButtonItem title="Item" id="cb6-j0-F4z"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="7bW-gM-8IO"/>
+                        <barButtonItem image="close.png" id="g0Q-kq-J5i">
+                            <connections>
+                                <action selector="onCloseWallpaperAction:" destination="eVa-rM-mx3" id="KgE-TA-ufZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem image="info.png" id="coJ-D1-GF8">
+                            <connections>
+                                <action selector="onGiveMoreInfoAction:" destination="eVa-rM-mx3" id="Qjt-H9-K8u"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bottomTitle" destination="cb6-j0-F4z" id="eYQ-OY-6bR"/>
+                        <outlet property="collectionView" destination="qmX-7R-qTi" id="NYt-xq-Usd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IAI-oz-OMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="-1954"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3QU-Bu-KNR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AnM-do-E64" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b1T-7f-xhx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hG5-VA-qnv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F1n-MS-g7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-649" y="-1954"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close.png" width="64" height="64"/>
+        <image name="info.png" width="64" height="64"/>
+        <image name="share.png" width="64" height="64"/>
+    </resources>
+</document>
