@@ -10,7 +10,6 @@
 
 @interface WallpaperCollectionViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic) NSUInteger currentIndex;
 
 @end

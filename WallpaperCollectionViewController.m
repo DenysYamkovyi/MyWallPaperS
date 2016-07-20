@@ -13,6 +13,7 @@
 @interface WallpaperCollectionViewController() <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *bottomTitle;
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) NSArray *imagesNamesLarge;
 
 @end
@@ -22,37 +23,37 @@
 
 static NSString * const reuseIdentifier = @"WallpaperCell";
 
+#pragma mark - Memory management
+
+#pragma mark - View LifeCycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.imagesNamesLarge  = @[@"1-Large", @"2-Large", @"3-Large", @"4-Large", @"5-Large",@"6-Large", @"7-Large", @"8-Large", @"9-Large", @"10-Large"];
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
+    self.collectionView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setHidden: true];
+    self.navigationController.toolbarHidden = false;
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:self.currentIndex inSection:0] atScrollPosition:0 animated:false];
 }
+
+#pragma mark - Action Handlers
+
+#pragma mark - Public
+
+#pragma mark - Private
+
+#pragma mark - Delegates
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(self.collectionView.bounds.size.width, self.collectionView.bounds.size.height);
+    return CGSizeMake(collectionView.bounds.size.width, collectionView.bounds.size.height);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -75,9 +76,10 @@ static NSString * const reuseIdentifier = @"WallpaperCell";
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.bounds.size.width, cell.bounds.size.height)];
     
-    cell.backgroundView = imageView;
+    UIImage *im = [UIImage imageWithJPGName:self.imagesNamesLarge[indexPath.row]];
+    imageView.image = im;
     
-    imageView.image = [UIImage imageWithJPGName:self.imagesNamesLarge[indexPath.row]];
+    [cell.contentView addSubview: imageView];
 
     return cell;
 }
@@ -127,12 +129,5 @@ static NSString * const reuseIdentifier = @"WallpaperCell";
     
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    [self.navigationController setNavigationBarHidden:true];
-    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:self.currentIndex inSection:0] atScrollPosition:0 animated:false];
-}
 
 @end

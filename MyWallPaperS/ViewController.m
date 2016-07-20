@@ -27,7 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.imagesNamesSmall  = @[@"1-Small", @"2-Small", @"3-Small", @"4-Small", @"5-Small",@"6-Small", @"7-Small", @"8-Small", @"9-Small", @"10-Small"];
-    self.navigationController.navigationBarHidden = false;
     self.title = @"Wallpapers";
     
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu"
@@ -42,6 +41,7 @@
 //    self.navigationController.navigationItem.leftBarButtonItem = leftBarButtonItem;
     // Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -92,6 +92,7 @@
     leftBarButtonItem.title = @"Menu";
     [leftBarButtonItem setAction:@selector(openMenu)];
     self.navigationController.navigationItem.leftBarButtonItem = leftBarButtonItem;
+    self.navigationController.navigationBarHidden = false;
 
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AnM-do-E64">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AnM-do-E64">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,7 +8,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -57,13 +56,14 @@
                         <segue destination="eVa-rM-mx3" kind="show" identifier="segueIdentifier" id="J6c-Ia-YEn"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="82" y="-1954"/>
         </scene>
         <!--Wallpaper Collection View Controller-->
         <scene sceneID="4h5-zz-LQp">
             <objects>
-                <viewController id="eVa-rM-mx3" customClass="WallpaperCollectionViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="eVa-rM-mx3" customClass="WallpaperCollectionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vm5-jp-qxh"/>
                         <viewControllerLayoutGuide type="bottom" id="DgD-Ih-BCU"/>
@@ -73,7 +73,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qmX-7R-qTi">
-                                <rect key="frame" x="0.0" y="70" width="600" height="486"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="KDG-rL-wqm">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -81,7 +81,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MA3-V9-FrC">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WallpaperCell" id="MA3-V9-FrC">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -89,6 +89,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <size key="customSize" width="50" height="50"/>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -99,11 +100,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="qmX-7R-qTi" secondAttribute="trailing" id="5oi-bB-sYi"/>
-                            <constraint firstItem="DgD-Ih-BCU" firstAttribute="top" secondItem="qmX-7R-qTi" secondAttribute="bottom" id="CdB-rA-au3"/>
-                            <constraint firstItem="qmX-7R-qTi" firstAttribute="leading" secondItem="a6G-KP-hqt" secondAttribute="leading" id="QMz-fC-UXL"/>
-                            <constraint firstItem="qmX-7R-qTi" firstAttribute="top" secondItem="vm5-jp-qxh" secondAttribute="bottom" constant="50" id="e7r-4F-XAO"/>
+                            <constraint firstItem="DgD-Ih-BCU" firstAttribute="top" secondItem="qmX-7R-qTi" secondAttribute="bottom" id="0YE-WY-qJo"/>
+                            <constraint firstItem="qmX-7R-qTi" firstAttribute="leading" secondItem="a6G-KP-hqt" secondAttribute="leading" id="7PI-ff-3q8"/>
+                            <constraint firstAttribute="trailing" secondItem="qmX-7R-qTi" secondAttribute="trailing" id="ABj-ub-9Yo"/>
+                            <constraint firstAttribute="bottom" secondItem="qmX-7R-qTi" secondAttribute="bottom" id="ZHg-rI-sP2"/>
+                            <constraint firstItem="qmX-7R-qTi" firstAttribute="top" secondItem="vm5-jp-qxh" secondAttribute="bottom" id="ieA-FW-8BZ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0YE-WY-qJo"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems>
                         <barButtonItem image="share.png" id="UBo-7Q-heA">
@@ -126,7 +133,7 @@
                         </barButtonItem>
                     </toolbarItems>
                     <nil key="simulatedTopBarMetrics"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <connections>
                         <outlet property="bottomTitle" destination="cb6-j0-F4z" id="eYQ-OY-6bR"/>
                         <outlet property="collectionView" destination="qmX-7R-qTi" id="NYt-xq-Usd"/>
